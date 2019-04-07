@@ -105,7 +105,7 @@ crontab: installing new crontab
 
 ## Next steps
 
-Create version that can be called from Jenkins (or Jenkins in a docker container)
+Create version that can be called from Jenkins (or Jenkins in a docker container).
 
 __Steve Groom__  
 __2019-04-06__
