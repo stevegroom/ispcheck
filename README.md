@@ -4,6 +4,15 @@ Compare the IP address reserved for the cable modem against the DNS entry regist
 
 ![Screenshot](screenshot.png)
 
+## Public repo on gitHub
+
+<https://github.com/stevegroom/ispcheck>
+
+```text
+https://github.com/stevegroom/ispcheck.git
+git@github.com:stevegroom/ispcheck.git
+```
+
 ## DNS Check
 
 <https://dns.google.com/resolve?name=groom.ch&type=A>
@@ -84,7 +93,7 @@ Add this line:
 
 ```bash
 0 20 * * * /Users/steve/development/docker/ispcheck/isMyDnsOk.sh
-``` 
+```
 
 to your crontab:
 
