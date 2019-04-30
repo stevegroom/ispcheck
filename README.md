@@ -13,6 +13,40 @@ https://github.com/stevegroom/ispcheck.git
 git@github.com:stevegroom/ispcheck.git
 ```
 
+## Flow
+
+```plantuml
+@startuml
+
+start
+floating note right: ~/development/ispcheck/isMyDnsOk.sh
+
+fork
+
+:process lookup current IP address;
+:process parse address with jq;
+
+fork again
+
+:process lookup reverse DNS address;
+:process parse address with jq;
+
+end fork
+
+if (addresses match?) then (yes)
+  :process message = success;
+else (no)
+  :process message = failure;
+endif
+
+:process Send message;
+
+stop
+
+@enduml
+```
+
+
 ## DNS Check
 
 <https://dns.google.com/resolve?name=groom.ch&type=A>
